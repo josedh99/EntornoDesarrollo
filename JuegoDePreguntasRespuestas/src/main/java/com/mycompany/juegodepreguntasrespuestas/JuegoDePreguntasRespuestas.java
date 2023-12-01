@@ -11,6 +11,7 @@ package com.mycompany.juegodepreguntasrespuestas;
 public class JuegoDePreguntasRespuestas {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        JFrameJuego juego = new JFrameJuego();
+        juego.setVisible(true);
     }
 }
