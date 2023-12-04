@@ -38,6 +38,7 @@ public class JFrameJuego extends javax.swing.JFrame {
         jLabel1.setText("preguntas");
 
         jTextField1.setText("Escribe aqui tu respuesta");
+        jTextField1.setEnabled(false);
 
         jButton1.setText("Enviar");
         jButton1.setEnabled(false);

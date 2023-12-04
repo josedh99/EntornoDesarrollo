@@ -15,8 +15,8 @@ import javax.swing.JTextField;
  */
 public class JuegoDePreguntasRespuestas {
 
-    static JLabel pregunta = new JLabel();
-    static JTextField respuesta = new JTextField();
+    static JLabel pregunta;
+    static JTextField respuesta;
     static JButton[] botones = new JButton[2];
     static JLabel contador = new JLabel(); 
     static String[] preguntas = {"¿Cuál es la capital de Francia?","¿En qué año se independizó Estados Unidos?","¿Cuántos continentes hay en el mundo?","¿Quién escribió \"Romeo y Julieta\"?","¿Cuál es el elemento más abundante en la corteza terrestre?","¿Cuál es el río más largo del mundo?","¿Qué planeta es conocido como \"el planeta rojo\"?","¿Cuál es la montaña más alta del mundo?","¿Quién fue el primer presidente de Estados Unidos?","¿En qué año se fundó la Organización de las Naciones Unidas (ONU)?","¿Cuál es el animal terrestre más grande?","¿Qué gas compone la mayor parte de la atmósfera de la Tierra?","¿Cuál es la velocidad de la luz en el vacío?","¿Quién pintó la Mona Lisa?","¿Cuál es la fórmula química del agua?"};
@@ -80,6 +80,7 @@ public class JuegoDePreguntasRespuestas {
             respuesta.setText("");
             botones[1].setText("Pasar");
             botones[0].setEnabled(true);
+            respuesta.setEnabled(true);
             int numRan = new Random().nextInt(0, preguntas.length-1);
             pregunta.setText(preguntas[numRan]);
             respuestas[numRan]=null;
